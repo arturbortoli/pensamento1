@@ -1,0 +1,12 @@
+.video{
+    border: 5px solid #FF0000;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: #000;
+        display: inline-block;
+}
+
+.body{
+    color:white;
+    background: black;
+}
