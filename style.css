@@ -1,128 +1,60 @@
-/*
-    Ajustes globais e de corpo do site.
-*/
 body {
-    color: #E5E5E5; /* Cor de texto mais suave */
-    background-color: #141414; /* Fundo escuro como na Netflix */
-    margin: 0;
+    color: white;
+    background: black;
+    margin: 0px;
     font-family: "Ubuntu", sans-serif;
-    overflow-x: hidden; /* Remove barra de rolagem horizontal desnecessária */
+    margin-bottom: 100px;
 }
 
-/*
-    Estilo para o cabeçalho.
-*/
 header {
-    background-color: #141414;
-    padding: 20px 40px;
-    position: fixed; /* Fixa o header no topo */
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box; /* Garante que o padding não adicione largura */
-    z-index: 100; /* Garante que o header fique na frente de outros elementos */
-    border-bottom: none; /* Remove a borda azul do header */
+    border-bottom: solid 2px rgb(42, 122, 228);
+    padding: 20px;
+    font-size: 32px;
+    color: rgb(42, 122, 228);
 }
 
-.logo {
-    font-size: 30px;
-    font-weight: 700;
-    color: #E50914; /* Cor vermelha da Netflix */
-}
-
-/*
-    Estilo para a seção principal de vídeo.
-*/
-.video-principal {
-    background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 1)), url('https://i.imgur.com/example_image.jpg') no-repeat center center / cover; /* Substitua 'example_image.jpg' pela imagem do filme */
-    min-height: 80vh; /* Altura mínima de 80% da viewport */
+.chamada {
+    background: rgb(184, 156, 213);
+    padding-bottom: 80px;
+    padding-top: 80px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Alinha o conteúdo ao final */
-    padding: 100px 40px 40px; /* Ajusta o padding para o conteúdo não ficar embaixo do header */
-    box-sizing: border-box;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao texto para melhorar a leitura */
+    justify-content: center;
 }
 
-.video-principal-info {
-    max-width: 50%; /* Limita a largura do texto */
-    margin-bottom: 20px;
+.chamadaTexto {
+    margin-right: 5%;
 }
 
-.video-principal-info h1 {
-    font-size: 4rem;
-    margin: 0;
+h1 {
+    font-size: 40px;
 }
 
-.video-principal-info p {
-    font-size: 1.5rem;
-    color: #B3B3B3; /* Cor mais suave para a descrição */
-    margin-top: 10px;
-}
-
-/*
-    Estilo para o iframe do vídeo.
-*/
-.video-principal-iframe {
-    margin-top: 20px;
-    width: 100%; /* Garante que o container do iframe ocupe toda a largura */
-    max-width: 900px; /* Limita a largura máxima do vídeo */
-}
-
-/*
-    Estilo para as categorias de vídeo.
-*/
-.categoria {
-    padding: 20px 40px;
-}
-
-.categoria h2 {
-    color: #E5E5E5; /* Cor branca para os títulos das categorias */
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+p {
+    font-size: 20px;
 }
 
 .categoria-videos {
     display: flex;
-    overflow-x: auto; /* Permite a rolagem horizontal */
+    overflow-x: auto;
     gap: 10px;
-    padding-bottom: 20px; /* Adiciona espaço para a barra de rolagem */
 }
 
-/* Oculta a barra de rolagem no WebKit */
-.categoria-videos::-webkit-scrollbar {
-    height: 8px;
-}
-
-.categoria-videos::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 10px;
-}
-
-.categoria-videos::-webkit-scrollbar-track {
-    background: #222;
-}
-
-/*
-    Estilo para as imagens dos vídeos.
-*/
-.categoria-videos a {
-    text-decoration: none;
-    color: inherit;
-    flex-shrink: 0; /* Impede que as imagens encolham */
+.categoria {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
 }
 
 .categoria-videos img {
-    height: 150px; /* Altura fixa para as miniaturas */
-    width: auto;
-    border-radius: 4px; /* Bordas arredondadas */
-    transition: transform 0.3s ease, border 0.3s ease; /* Transição suave */
-    opacity: 1; /* Remove a opacidade padrão */
-    border: 2px solid transparent; /* Borda transparente inicial */
+    opacity: 0.5;
+    height: 200px;
 }
 
 .categoria-videos img:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-    border: 2px solid #fff; /* Borda branca no hover */
-    cursor: pointer;
+    opacity: 1.0;
+    border: 3px solid green;
+}
+
+.categoria h2 {
+    color: rgb(42, 122, 228);
 }
