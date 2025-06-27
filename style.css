@@ -2,7 +2,7 @@ body {
     color: white;
     background: black;
     margin: 0px;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Chakra Petch", sans-serif;
     margin-bottom: 100px;
 }
 
@@ -21,7 +21,7 @@ header {
     justify-content: center;
 }
 
-.chamadaTexto {
+.chamada-texto {
     margin-right: 5%;
 }
 
